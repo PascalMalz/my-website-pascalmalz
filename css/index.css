@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+.welcome_text_box {
+  overflow-y: auto;
+  margin-left: 2rem;
+  position: absolute;
+  max-height: 100%;
+  z-index: 2;
+  top: 0;
+  max-width: 18rem;
+}
+
+.myh {
+  height: auto;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #0a66c2;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 1rem;
+}
+
+.image_start {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.linkedin_card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  color: white;
+  background-color: #000;
+  border-radius: 8px;
+  color: white;
+  width: auto;
+  margin-top: 30px;
+  overflow-y: auto;
+}
+
+.linkedin_card_header {
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: #38434f;
+  border-radius: 8px 8px 0 0;
+}
+
+.linkedin_card_container > * {
+  color: white;
+  font-style: normal;
+}
+
+/* On mouse-over, add a deeper shadow */
+.linkedin_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.linkedin_card_container {
+  padding: 2px 16px;
+}
+.svg_linkedin {
+  height: 70%;
+  width: auto;
+  top: 50%;
+  position: relative;
+  transform: translate(0, -50%);
+  padding-left: 16px;
+}
+.my_linkedin_pic {
+  width: 56px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-clip: content-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 49.9%;
+}
+.go_to_linkedin {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: white;
+  border: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: inherit;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 2px #fff;
+  border-radius: 24px;
+  margin: 5px;
+  text-align: center;
+}
+.go_to_linkedin:hover {
+  box-shadow: inset 0 0 0 4px #fff;
+}
+.linkedin_details {
+  display: none;
+}
+.projects {
+  text-align: center;
+}
+
+.container_start {
+  flex-direction: row;
+  align-items: center;
+}
+
+.display_on_smaller_size {
+  display: none;
+}
+
+.choices {
+  height: 65rem;
+  max-width: 98vw;
+}
+
+.choice_image {
+  max-height: calc(100% - 1.8rem);
+  top: 50%;
+  position: relative;
+  transform: translate(0, -50%);
+}
+
+.container_image {
+  height: 100%;
+  width: auto;
+  display: flex;
+  max-height: 100vw;
+  position: relative;
+}
+
+.choice_field {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border-radius: 5px;
+  border-color: rgb(15, 25, 36);
+  border: 1rem;
+  /* background: url("/images/Background_content.svg");
+	background-repeat: no-repeat;
+	background-size: cover; */
+  margin: 1rem;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 3px 3px #0a66c2;
+  transition: 0.3s;
+  border-radius: 5px;
+  border-color: rgb(15, 25, 36);
+  border: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .welcome_text_box {
+    left: 0;
+    margin-left: 1rem;
+    max-width: 20rem;
+  }
+  .image_start {
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100%;
+  }
+  .myh {
+    font-size: 2rem;
+  }
+  .container_start {
+    flex-direction: column;
+  }
+  .container_image {
+    height: fit-content;
+  }
+  p {
+    max-width: 30vw;
+    font-size: 2.5rem;
+  }
+  .display_on_full_size {
+    display: none;
+  }
+  .display_on_smaller_size {
+    display: unset;
+  }
+  .choices {
+    height: auto;
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 1rem;
+  }
+  .choice_image {
+    max-height: calc(100%);
+    transform: translate(0, 0);
+  }
+  .nav_top {
+    height: 17rem;
+  }
+  .home_button {
+    width: 15rem;
+    height: 15rem;
+  }
+  .linkedin_details {
+    display: none;
+  }
+  .linkedin_card_container > * {
+    font-size: 1.5rem;
+  }
+  .go_to_linkedin {
+    font-size: 2rem;
+    height: 100%;
+    line-height: 2.2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 2.5rem;
+    max-width: 35vw;
+    margin-block-end: 0.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 2.5rem;
+    max-width: 35vw;
+    margin-block-end: 0.3rem;
+  }
+}

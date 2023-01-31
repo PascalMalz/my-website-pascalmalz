@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container_start {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.image_start {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: inherit;
+}
+
+img {
+  text-align: center;
+}
+
+.main_content {
+  background: url("/images/Background_content.svg");
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid_flex_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1vw;
+}

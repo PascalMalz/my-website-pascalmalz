@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pascal Malz Digital CV Home Page Web Presence</title>
+    <meta
+      name="description"
+      content="Pascal Malz self marketing page demonstrates his abilities, experiences and projects as a digital interactive cv / resume. May be used as an example to built your own self marketing website"
+    />
+    <meta name="author" content="Pascal Malz" />
+    <meta name="copyright" content="Pascal Malz" />
+    <meta name="robots" content="index" />
+    <meta name="robots" content="follow" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <link href="/css/summary.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/summary_objects.js"></script>
+  </head>
+
+  <body>
+    <div id="timeline">
+      <p
+        style="
+          position: absolute;
+          top: 0;
+          padding-left: 1vw;
+          width: 100%;
+          border-top: 6px solid black;
+          max-width: 100%;
+        "
+      >
+        <script>
+          document.write("Summary - Timeline" + "<br>" + "Today: " + today);
+        </script>
+      </p>
+      <div id="bar"></div>
+    </div>
+    <script src="/js/summary.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/summary_time.js"></script>
+    <script src="/js/summary_animation.js"></script>
+    <script src="/js/summary_background.js"></script>
+    <script>
+      setTimeout(hitTheTargetMessage(), 0);
+      function hitTheTargetMessage() {
+        if (alreadyHit !== "true") {
+          alert("Try to hit the target, to activate the content.");
+        }
+      }
+    </script>
+  </body>
+</html>

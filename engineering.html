@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pascal Malz Digital CV Home Page Web Presence</title>
+    <meta
+      name="description"
+      content="Pascal Malz self marketing page demonstrates his abilities, experiences and projects as a digital interactive cv / resume. May be used as an example to built your own self marketing website"
+    />
+    <meta name="author" content="Pascal Malz" />
+    <meta name="copyright" content="Pascal Malz" />
+    <meta name="robots" content="index" />
+    <meta name="robots" content="follow" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <link href="/css/general.css" rel="stylesheet" />
+    <link href="/css/compsc.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script src="/js/engin_objects.js"></script>
+
+    <nav class="nav_top">
+      <a href="/" class="home_button"></a>
+      <a
+        id="contactTag"
+        class="nav_link1"
+        style="cursor: pointer"
+        href="javascript:showContact()"
+      >
+        <p>Contact</p>
+      </a>
+      <!-- <div id="webage_overview" class="dropdown">
+                    <button class="dropbtn"><p style="text-transform: uppercase; font-size: 2rem;">Website overview</p>
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id="project_list" class="dropdown-content">
+                        <p style="margin: 0;">Please choose the project you are curious about.</p>
+                </div>
+            </div> -->
+    </nav>
+    <div class="placeholder" style="position: relative; width: 100%; height: 0">
+      <div id="contact_dropdown_tag" class="nav_dropdown" id="1">
+        <address style="text-align: center; font-size: 3rem">
+          Name: Pascal Malz <br />
+          E-mail: pascalmalz@gmail.com <br />
+          Mobile: +49 151 11 674 200 <br />
+          <a
+            href="https://www.xing.com/profile/Pascal_Malz/cv"
+            style="color: rgba(32, 179, 93, 0.849)"
+            >XING</a
+          ><br />
+          <a
+            href="https://www.linkedin.com/in/pascal-malz-7b3527a5/"
+            style="color: rgba(90, 106, 245, 0.849)"
+            >Linkedin</a
+          ><br />
+          <a
+            href="https://www.hackerrank.com/pascalmalz"
+            style="color: rgb(255 55 0)"
+            >Hackerrank</a
+          ><br />
+        </address>
+      </div>
+    </div>
+
+    <div
+      class="container_start"
+      style="
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <h1><b>Projects - Engineering</b></h1>
+    </div>
+    <script src="/js/load_projects.js"></script>
+    <script src="/js/load_content.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/website_overview.js"></script>
+    <script src="/js/adjust_image_width_hight.js"></script>
+  </body>
+</html>
